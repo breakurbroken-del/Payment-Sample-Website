@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #12001f;
+  color: white;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #1f0033;
+  border-bottom: 2px solid gold;
+}
+
+.topbar button {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: #210038;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid gold;
+  box-shadow: 0 0 20px rgba(255,215,0,0.3);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #32004d;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.green {
+  background: #00c853;
+  color: white;
+}
+
+.qr {
+  width: 250px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.telegram {
+  display: block;
+  text-align: center;
+  background: #229ED9;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.requestBox {
+  background: #32004d;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
