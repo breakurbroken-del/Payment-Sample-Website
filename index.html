@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nashedi Paying Method</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <h2>Nashedi Paying Method</h2>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+  <div id="authBox">
+    <h1>Login / Register</h1>
+
+    <input type="text" id="mobile" placeholder="Mobile Number">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="registerUser()">Register</button>
+    <button onclick="loginUser()">Login</button>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+
+    <div class="card">
+      <h2>Payment Section</h2>
+
+      <img id="qrImage" src="qr.png" class="qr">
+
+      <h3 id="upiText">UPI ID: barmanrajbir@fam</h3>
+
+      <input type="text" id="utr" placeholder="Enter Transaction ID / UTR">
+
+      <input type="file" id="screenshot">
+
+      <button class="green" onclick="submitPayment()">Submit Payment</button>
+
+      <p id="message"></p>
+    </div>
+
+    <div class="card">
+      <h2>Payment History</h2>
+      <div id="history"></div>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+
+      <a class="telegram" href="https://t.me/RaftaarLimited" target="_blank">
+        Contact Telegram
+      </a>
+    </div>
+
+  </div>
+
+  <div id="adminPanel" style="display:none;">
+
+    <div class="card">
+      <h2>Admin Panel</h2>
+
+      <h3>Total Users: <span id="userCount"></span></h3>
+
+      <div id="allUsers"></div>
+    </div>
+
+    <div class="card">
+      <h2>Edit QR & UPI</h2>
+
+      <input type="text" id="newUpi" placeholder="New UPI ID">
+
+      <input type="file" id="newQr">
+
+      <button onclick="updatePaymentSettings()">Update</button>
+    </div>
+
+    <div class="card">
+      <h2>Payment Requests</h2>
+      <div id="requests"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
